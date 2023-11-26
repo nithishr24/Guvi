@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <title>Profile Page</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+              <div class="col-md-3">
+            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="avatar img-circle img-thumbnail" alt="avatar" id="avatarImage">
+            <h6>Upload a Photo...</h6>
+            <input type="file" class="form-control" id="photoInput" onchange="updateAvatar()">
+        </div>
+        <div class="col-md-9">
+            <h2>Profile Information</h2>
+            <form id="profile" onsubmit="profileuser(event)">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dob">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="currentPassword">Current Password:</label>
+                    <input type="password" class="form-control" id="currentPassword" placeholder="Enter your current password">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">New Password:</label>
+                    <input type="password" class="form-control" id="newPassword" placeholder="Enter your new password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmNewPassword">Confirm New Password:</label>
+                    <input type="password" class="form-control" id="confirmNewPassword" placeholder="Confirm your new password">
+                </div>
+            </form>
+            <input type="button" class="btn btn-danger" onclick="profileUser()" value="Edit">
+            <input type="button" class="btn btn-success" onclick="profileUser()" value="Save">
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/profile.js"></script>
+</html>

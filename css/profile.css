@@ -1,0 +1,25 @@
+body {
+    background: powderblue;
+}
+
+.avatar-container {
+    text-align: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.col-md-8 {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.col-md-8 h2 {
+    text-align: center;
+    background-color: powderblue;
+    padding: 15px;
+}
