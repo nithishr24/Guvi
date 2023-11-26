@@ -12,7 +12,7 @@ $database = $client->$databaseName;
 $collection = $database->$collectionName;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = "exampleone@.com";
+    $email = "exampl@one.com";
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $age = $_POST["age"];
