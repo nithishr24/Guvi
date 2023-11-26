@@ -12,7 +12,7 @@ $database = $client->$databaseName;
 $collection = $database->$collectionName;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = "user@example.com"; // Replace with the actual email or identifier
+    $email = "nithishr2020csbs@gmail.com";
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $age = $_POST["age"];
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Passwords do not match';
     } else {
         $updateResult = $collection->updateOne(
-            ["email" => $email], // Adjust the query based on your document's identifier
+            ["email" => $email],
             [
                 '$set' => [
                     "firstName" => $firstName,
